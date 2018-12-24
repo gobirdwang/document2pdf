@@ -1,9 +1,10 @@
-package com.th.documentconversion;
+package com.th.documentconversion.openoffice;
 
 import java.net.ConnectException;
 
 import com.artofsolving.jodconverter.openoffice.connection.OpenOfficeConnection;
 import com.artofsolving.jodconverter.openoffice.connection.SocketOpenOfficeConnection;
+import com.th.documentconversion.Params;
 
 import static com.th.documentconversion.ResultMessage.START_SERVICE_FAILED_MESSAGE;
 

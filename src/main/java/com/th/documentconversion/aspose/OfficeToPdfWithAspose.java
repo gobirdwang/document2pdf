@@ -1,4 +1,4 @@
-package com.th.documentconversion;
+package com.th.documentconversion.aspose;
 
 import java.io.File;
 import java.io.InputStream;
@@ -7,13 +7,15 @@ import java.io.FileOutputStream;
 import com.aspose.words.License;
 import com.aspose.words.Document;
 import com.aspose.words.SaveFormat;
+import com.th.documentconversion.Office2Pdf;
+import com.th.documentconversion.ResultMessage;
 
 /**
  * @description 通过aspose转换word文件到pdf
  * @author WangPengfei
  * @since 2018/12/17
  */
-public class OfficeToPdfWithAspose implements Office2Pdf{
+public class OfficeToPdfWithAspose implements Office2Pdf {
     /**
      * @description 进行license验证，没有license会显示水印
      * @return

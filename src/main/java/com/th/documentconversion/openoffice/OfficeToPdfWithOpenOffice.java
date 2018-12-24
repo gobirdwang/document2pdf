@@ -1,27 +1,26 @@
-package com.th.documentconversion;
+package com.th.documentconversion.openoffice;
 
 import java.io.File;
 import java.net.ConnectException;
-
+import com.th.documentconversion.Params;
+import com.th.documentconversion.ResultMessage;
 import com.artofsolving.jodconverter.DocumentConverter;
 import com.artofsolving.jodconverter.openoffice.connection.OpenOfficeConnection;
 import com.artofsolving.jodconverter.openoffice.connection.SocketOpenOfficeConnection;
 import com.artofsolving.jodconverter.openoffice.converter.StreamOpenOfficeDocumentConverter;
-
 /**
  * 通过openoffice转换word到pdf
  * @author WangPengfei
  * @since 2018/12/17
  */
-public abstract class OfficeToPdfWithOpenOffice implements Office2Pdf{
+public class OfficeToPdfWithOpenOffice {
     /**
      * @description 转换office到pdf
      * @param sourceFile
      * @param destFile
      * @return
      */
-    @Override
-    public int office2Pdf(String sourceFile, String destFile) {
+    public static int office2Pdf(String sourceFile, String destFile) {
         OpenOfficeConnection connection = null;
         try {
 

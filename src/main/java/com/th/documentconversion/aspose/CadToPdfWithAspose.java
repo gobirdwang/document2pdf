@@ -1,4 +1,4 @@
-package com.th.documentconversion;
+package com.th.documentconversion.aspose;
 
 import java.io.File;
 import java.io.InputStream;
@@ -7,6 +7,7 @@ import com.aspose.cad.*;
 import com.aspose.words.License;
 import com.aspose.cad.imageoptions.PdfOptions;
 import com.aspose.cad.imageoptions.CadRasterizationOptions;
+import com.th.documentconversion.Params;
 
 /**
  * @description 通过aspose将cad文档转换为pdf
