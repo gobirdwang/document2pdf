@@ -1,4 +1,4 @@
-package com.th.officeconversion;
+package com.th.documentconversion;
 
 /**
  * @description 定义一些系统中需要的常量

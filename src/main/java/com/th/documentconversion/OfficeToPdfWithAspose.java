@@ -1,4 +1,4 @@
-package com.th.officeconversion;
+package com.th.documentconversion;
 
 import java.io.File;
 import java.io.InputStream;
@@ -14,20 +14,6 @@ import com.aspose.words.SaveFormat;
  * @since 2018/12/17
  */
 public class OfficeToPdfWithAspose implements Office2Pdf{
-
-/*
-    public static void main(String[] args){
-        long old = System.currentTimeMillis();
-        String sourceFile = Params.oriPath + Params.oriName;
-        String destFile = Params.targetPath + Params.targetName;
-        for (int i = 0; i <100 ; i++) {
-            office2PdfWithAspose(sourceFile, destFile);
-        }
-        long now = System.currentTimeMillis();
-        System.out.println("共耗时：" + ((now - old) / 1000.0) + "秒");
-    }
-*/
-
     /**
      * @description 进行license验证，没有license会显示水印
      * @return
@@ -46,7 +32,7 @@ public class OfficeToPdfWithAspose implements Office2Pdf{
     }
 
     /**
-     *
+     * @description 对office文件的转换
      * @param sourceFile
      * @param destFile
      * @return

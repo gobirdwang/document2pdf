@@ -1,4 +1,4 @@
-package com.th.officeconversion;
+package com.th.documentconversion;
 
 import java.io.File;
 import java.net.ConnectException;
@@ -13,15 +13,15 @@ import com.artofsolving.jodconverter.openoffice.converter.StreamOpenOfficeDocume
  * @author WangPengfei
  * @since 2018/12/17
  */
-public abstract class OfficeToPdfWithOpenOffice /*implements Office2Pdf*/{
+public abstract class OfficeToPdfWithOpenOffice implements Office2Pdf{
     /**
      * @description 转换office到pdf
      * @param sourceFile
      * @param destFile
      * @return
      */
-   // @Override
-    public static int office2Pdf(String sourceFile, String destFile) {
+    @Override
+    public int office2Pdf(String sourceFile, String destFile) {
         OpenOfficeConnection connection = null;
         try {
 
@@ -55,16 +55,5 @@ public abstract class OfficeToPdfWithOpenOffice /*implements Office2Pdf*/{
         }
         System.out.println(ResultMessage.CONVERSION_SUCCESS_MESSAGE);
         return ResultMessage.CONVERSION_SUCCESS_CODE;
-    }
-
-    public static void main(String[] args){
-        long old = System.currentTimeMillis();
-        String sourceFile = Params.oriPath + Params.oriName;
-        String destFile = Params.targetPath + Params.targetName;
-        for (int i = 0; i <20 ; i++) {
-            System.out.println(office2Pdf(sourceFile, destFile));
-        }
-        long now = System.currentTimeMillis();
-        System.out.println("共耗时：" + ((now - old) / 1000.0) + "秒");
     }
 }
