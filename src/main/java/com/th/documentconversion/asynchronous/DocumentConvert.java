@@ -9,7 +9,7 @@ import com.th.documentconversion.openoffice.OfficeToPdfWithOpenOffice;
  * @since 2018/12/24
  */ 
 public class DocumentConvert {
-    public void executeMessage(CallBack callBack){
+    public void documentConvert(CallBack callBack){
         System.out.println("现在开始转换！");
         OfficeToPdfWithOpenOffice.office2Pdf(Params.oriPath+Params.oriName,Params.targetPath+Params.targetName);
         String result="文件转换完成！整个文件上传功能完成！";

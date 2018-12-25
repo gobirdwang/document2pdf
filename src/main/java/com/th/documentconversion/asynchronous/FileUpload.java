@@ -17,7 +17,7 @@ public class FileUpload implements CallBack {
     public void uploadFiles(){
         System.out.println("开始上传！");
         new Thread(()->{
-            documentConvert.executeMessage(FileUpload.this);
+            documentConvert.documentConvert(FileUpload.this);
         }).start();
         //文件上传成功，可以进行后续的其他操作，此时转换进行中。
         System.out.println("上传完成！");
