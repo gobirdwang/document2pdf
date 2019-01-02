@@ -4,8 +4,7 @@ public class Test {
     public static void main(String[] args) {
         DocumentConvert documentConvert =new DocumentConvert();
         FileUpload fileUpload =new FileUpload(documentConvert);
-        fileUpload.uploadFiles();
-        System.out.println("上传结束，做转换的同时，开始做其他的事情~");
+        System.out.println(fileUpload.uploadFiles());
         doOtherThing();
     }
 
