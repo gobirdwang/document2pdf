@@ -15,7 +15,7 @@ import com.th.documentconversion.ResultMessage;
  * @author WangPengfei
  * @since 2018/12/17
  */
-public class OfficeToPdfWithAspose implements Office2Pdf {
+public class OfficeToPdfWithAspose {
     /**
      * @description 进行license验证，没有license会显示水印
      * @return
@@ -39,8 +39,7 @@ public class OfficeToPdfWithAspose implements Office2Pdf {
      * @param destFile
      * @return
      */
-    @Override
-    public int office2Pdf(String sourceFile, String destFile) {
+    public static int office2Pdf(String sourceFile, String destFile) {
         if (!getLicense()) {
             System.out.println(ResultMessage.ACTIVATE_FAILED_MESSAGE);
             return ResultMessage.ACTIVATE_FAILED_CODE;
